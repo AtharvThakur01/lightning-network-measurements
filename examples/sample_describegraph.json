@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "pub_key": "02abcdef0000000000000000000000000000000000000000000000000000000001",
+      "alias": "sample-lnd",
+      "color": "#3399ff",
+      "addresses": [{"network": "tcp", "addr": "203.0.113.10:9735"}]
+    },
+    {
+      "pub_key": "031234560000000000000000000000000000000000000000000000000000000002",
+      "alias": "SAMPLECLN",
+      "color": "#031234",
+      "addresses": [{"network": "tcp", "addr": "198.51.100.20:9735"}]
+    },
+    {
+      "pub_key": "03eeeeee0000000000000000000000000000000000000000000000000000000003",
+      "alias": "sample-eclair",
+      "color": "#49daaa",
+      "addresses": []
+    }
+  ],
+  "edges": [
+    {
+      "channel_id": "850000x1x0",
+      "chan_point": "txid:0",
+      "node1_pub": "02abcdef0000000000000000000000000000000000000000000000000000000001",
+      "node2_pub": "031234560000000000000000000000000000000000000000000000000000000002",
+      "capacity": "1000000",
+      "node1_policy": {
+        "time_lock_delta": 40,
+        "min_htlc": "1000",
+        "fee_base_msat": "1000",
+        "fee_rate_milli_msat": "1"
+      },
+      "node2_policy": {
+        "time_lock_delta": 14,
+        "min_htlc": "1000",
+        "fee_base_msat": "1000",
+        "fee_rate_milli_msat": "10"
+      }
+    },
+    {
+      "channel_id": "850001x2x0",
+      "chan_point": "txid:1",
+      "node1_pub": "031234560000000000000000000000000000000000000000000000000000000002",
+      "node2_pub": "03eeeeee0000000000000000000000000000000000000000000000000000000003",
+      "capacity": "2500000",
+      "node1_policy": {
+        "time_lock_delta": 14,
+        "min_htlc": "1000",
+        "fee_base_msat": "1000",
+        "fee_rate_milli_msat": "10"
+      },
+      "node2_policy": {
+        "time_lock_delta": 144,
+        "min_htlc": "1",
+        "fee_base_msat": "1000",
+        "fee_rate_milli_msat": "100"
+      }
+    }
+  ]
+}
+

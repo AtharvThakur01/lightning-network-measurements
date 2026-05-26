@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ln-measurements"
+version = "0.1.0"
+description = "Lightning Network topology measurement refresh pipeline"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.2",
+  "networkx>=3.3",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
